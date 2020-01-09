@@ -5,7 +5,7 @@ UserSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   avatar: { type: String },
-  date: { type: date, default: date.now() }
+  date: { type: Date, default: Date.now() }
 });
 
 // Mongoose.model takes 2 inputs, model name & actual model
